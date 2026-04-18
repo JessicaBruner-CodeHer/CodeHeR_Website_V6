@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npm install *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5000/api/health)",
+      "Bash(curl -s -X POST http://localhost:5000/api/badge-requests -H 'Content-Type: application/json' -d '{\"companyName\":\"Test Co\",\"firstName\":\"Jane\",\"lastName\":\"Smith\",\"email\":\"jane@test.com\",\"intentType\":\"interested\",\"agreementAccepted\":false}')"
     ]
   }
 }
