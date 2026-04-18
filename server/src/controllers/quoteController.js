@@ -26,7 +26,7 @@ export const createQuote = async (req, res) => {
         const resend = new Resend(env.resendApiKey);
 
         await resend.emails.send({
-          from: "CodeHeR <onboarding@resend.dev>",
+          from: "CodeHeR <noreply@codeherllc.com>",
           to: ["info@codeherllc.com"],
           subject: "New Quote Request",
           html: `

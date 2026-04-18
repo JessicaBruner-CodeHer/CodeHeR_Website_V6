@@ -25,7 +25,7 @@ export const createBadgeRequest = async (req, res) => {
         const resend = new Resend(env.resendApiKey);
 
         await resend.emails.send({
-          from: "CodeHeR <onboarding@resend.dev>",
+          from: "CodeHeR <noreply@codeherllc.com>",
           to: ["info@codeherllc.com"],
           subject: intentType === 'commit' ? "New NoMoreLabels Badge Request" : "NoMoreLabels Interest — Follow Up Needed",
           html: `
