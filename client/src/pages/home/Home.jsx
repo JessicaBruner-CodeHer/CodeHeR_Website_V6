@@ -2,6 +2,7 @@ import { useSeo }     from '@/hooks/useSeo'
 import Hero           from '@/sections/hero/Hero'
 import ServicesTeaser from '@/sections/services/ServicesTeaser'
 import Mission        from '@/sections/mission/Mission'
+import AboutTeaser    from '@/sections/about/AboutTeaser'
 import ProjectCta     from '@/sections/projectcta/ProjectCta'
 
 export default function Home({ onQuoteClick }) {
@@ -15,6 +16,7 @@ export default function Home({ onQuoteClick }) {
       <Hero          onQuoteClick={onQuoteClick} />
       <ServicesTeaser />
       <Mission />
+      <AboutTeaser />
       <ProjectCta    onQuoteClick={onQuoteClick} />
     </div>
   )
