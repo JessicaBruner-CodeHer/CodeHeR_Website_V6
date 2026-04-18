@@ -10,7 +10,6 @@ export const navbarContent = {
     { label: 'Home',              href: '/' },
     { label: 'Business Solutions', href: '/services/workforce' },
     { label: 'Digital Solutions', href: '/services/digital' },
-    { label: 'About',             href: '/about' },
   ],
   ctaLabel: 'Get a Quote',
 }
@@ -97,7 +96,6 @@ export const footerContent = {
     { label: 'Home',              href: '/' },
     { label: 'Business Solutions', href: '/services/workforce' },
     { label: 'Digital Solutions', href: '/services/digital' },
-    { label: 'About',             href: '/about' },
   ],
   contact: {
     email: 'info@codeherllc.com',

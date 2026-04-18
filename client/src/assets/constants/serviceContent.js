@@ -2,6 +2,13 @@
    CodeHeR V5 — Service Page Content
    ============================================================ */
 
+import portfolioRestaurant  from '../images/portfolio-restaurant.svg'
+import portfolioSaas        from '../images/portfolio-saas.svg'
+import portfolioEcommerce   from '../images/portfolio-ecommerce.svg'
+import portfolioFitness     from '../images/portfolio-fitness.svg'
+import portfolioNonprofit   from '../images/portfolio-nonprofit.svg'
+import portfolioRealestate  from '../images/portfolio-realestate.svg'
+
 // ── Workforce Consulting Page ────────────────────────────────
 export const workforcePageContent = {
   seo: {
@@ -99,14 +106,13 @@ export const digitalPageContent = {
   portfolio: {
     headline: 'Recent work',
     subtext:  'Just a glimpse of what is possible with CodeHe{R} LLC',
-    // Projects will be added here when ready
     projects: [
-      { id: 1, title: 'Restaurant & Dining',   tags: ['New build'],  url: null, image: '/src/assets/images/portfolio-restaurant.svg',  description: 'Farm-to-table restaurant site with online reservations and seasonal menu showcase.' },
-      { id: 2, title: 'SaaS Dashboard',        tags: ['New build'],  url: null, image: '/src/assets/images/portfolio-saas.svg',         description: 'Analytics platform with live metrics, revenue tracking, and team management.' },
-      { id: 3, title: 'E-Commerce Store',      tags: ['E-commerce'], url: null, image: '/src/assets/images/portfolio-ecommerce.svg',    description: 'Full-featured online store with product catalog, cart, and checkout flow.' },
-      { id: 4, title: 'Fitness & Wellness',    tags: ['New build'],  url: null, image: '/src/assets/images/portfolio-fitness.svg',      description: 'Gym membership site with class schedules, trainer profiles, and free trial signup.' },
-      { id: 5, title: 'Nonprofit Organization',tags: ['New build'],  url: null, image: '/src/assets/images/portfolio-nonprofit.svg',    description: 'Community impact site with donation flow, program highlights, and annual reporting.' },
-      { id: 6, title: 'Real Estate Listings',  tags: ['New build'],  url: null, image: '/src/assets/images/portfolio-realestate.svg',   description: 'Property search platform with map view, listing cards, and lead capture.' },
+      { id: 1, title: 'Restaurant & Dining',    tags: ['New build'],  url: null, image: portfolioRestaurant,  description: 'Farm-to-table restaurant site with online reservations and seasonal menu showcase.' },
+      { id: 2, title: 'SaaS Dashboard',         tags: ['New build'],  url: null, image: portfolioSaas,         description: 'Analytics platform with live metrics, revenue tracking, and team management.' },
+      { id: 3, title: 'E-Commerce Store',       tags: ['E-commerce'], url: null, image: portfolioEcommerce,    description: 'Full-featured online store with product catalog, cart, and checkout flow.' },
+      { id: 4, title: 'Fitness & Wellness',     tags: ['New build'],  url: null, image: portfolioFitness,      description: 'Gym membership site with class schedules, trainer profiles, and free trial signup.' },
+      { id: 5, title: 'Nonprofit Organization', tags: ['New build'],  url: null, image: portfolioNonprofit,    description: 'Community impact site with donation flow, program highlights, and annual reporting.' },
+      { id: 6, title: 'Real Estate Listings',   tags: ['New build'],  url: null, image: portfolioRealestate,   description: 'Property search platform with map view, listing cards, and lead capture.' },
     ],
   },
   cta: {

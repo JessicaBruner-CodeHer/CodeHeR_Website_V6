@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { heroContent as c } from '@/assets/constants/siteContent'
 import Button from '@/ui/button/Button'
+import logoDarkTransparent from '../../assets/images/CodeHeR_Logo_Dark_Transparent.svg'
+import logoTransparent from '../../assets/images/CodeHeR_Logo_Transparent.svg'
 
 const fadeUp = (delay = 0) => ({
   initial:    { opacity: 0, y: 28 },
@@ -22,7 +24,7 @@ export default function Hero({ onQuoteClick }) {
       ">
         <motion.img
           {...fadeUp(0.05)}
-          src="/src/assets/images/CodeHeR_Logo_Dark_Transparent.svg"
+          src={logoDarkTransparent}
           alt="CodeHeR LLC"
           className="w-full max-w-[420px]"
         />
@@ -47,7 +49,7 @@ export default function Hero({ onQuoteClick }) {
             className="lg:hidden mb-8 flex justify-center"
           >
             <img
-              src="/src/assets/images/CodeHeR_Logo_Transparent.svg"
+              src={logoTransparent}
               alt="CodeHeR LLC"
               className="w-full max-w-[300px]"
             />

@@ -7,10 +7,9 @@ import Modal from '@/ui/modal/Modal'
 import QuoteForm from '@/components/forms/quoteform/QuoteForm'
 import { useModal } from '@/hooks/useModal'
 
-const Home               = lazy(() => import('@/pages/home/Home'))
-const About              = lazy(() => import('@/pages/about/About'))
-const WorkforceService   = lazy(() => import('@/pages/services/workforce/WorkforceService'))
-const DigitalService     = lazy(() => import('@/pages/services/digital/DigitalService'))
+const Home             = lazy(() => import('@/pages/home/Home'))
+const WorkforceService = lazy(() => import('@/pages/services/workforce/WorkforceService'))
+const DigitalService   = lazy(() => import('@/pages/services/digital/DigitalService'))
 
 export default function App() {
   const { isOpen, openModal, closeModal } = useModal()
@@ -21,10 +20,9 @@ export default function App() {
       <main>
         <Suspense fallback={<PageLoader />}>
           <Routes>
-            <Route path="/"                        element={<Home onQuoteClick={openModal} />} />
-            <Route path="/about"                   element={<About onQuoteClick={openModal} />} />
-            <Route path="/services/workforce"      element={<WorkforceService onQuoteClick={openModal} />} />
-            <Route path="/services/digital"        element={<DigitalService onQuoteClick={openModal} />} />
+            <Route path="/"                   element={<Home onQuoteClick={openModal} />} />
+            <Route path="/services/workforce" element={<WorkforceService onQuoteClick={openModal} />} />
+            <Route path="/services/digital"   element={<DigitalService onQuoteClick={openModal} />} />
           </Routes>
         </Suspense>
       </main>
